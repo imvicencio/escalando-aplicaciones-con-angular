@@ -13,6 +13,7 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: './pages/register/register.module#RegisterModule'
+
   },
   {
     path: '',
@@ -30,6 +31,6 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     LoginModule
   ],
-  exports: [ RouterModule ]
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }
