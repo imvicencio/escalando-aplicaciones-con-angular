@@ -5,6 +5,7 @@ import { environment } from 'src/environments/environment';
 interface Group {
   id: string;
   value: string;
+  active: boolean;
 }
 
 @Injectable()

@@ -11,8 +11,7 @@
     "e2e": "ng e2e",
     "stubs": "npx stubby -d ./stubs/config.yaml -w",
     "inspect-coverage": "npm run test -- --watch=false && http-server coverage",
-    "e2e-stubs" : "npm run stubs | npm run e2e"
-
+    "e2e-stubs": "npm run stubs | npm run e2e"
   },
   "private": true,
   "dependencies": {

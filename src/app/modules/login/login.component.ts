@@ -19,7 +19,8 @@ export class LoginComponent implements OnInit {
 
   formModel: LoginFormModel;
   isLoading: boolean;
-  groups: [];
+  // Valor vacio para evitar pipe sobre undefined
+  groups = [];
 
   constructor(
     private route: ActivatedRoute,
