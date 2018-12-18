@@ -22,6 +22,7 @@ export class AuthGuard implements CanLoad {
 
   private checkLogin(url: string): boolean {
     if (this.loginService.isLoggedIn) {
+      this.router.navigateByUrl(this.loginService.fallbackUrl);
       return true;
     }
     this.loginService.fallbackUrl = url;
